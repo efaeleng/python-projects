@@ -3,7 +3,8 @@ import random
 while True:
   print("Welcome to Rock 👊, Paper 📰 And Scissors ✂️  game!")
   print("Rules ✍️: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.\n")
-  user_input = input("Enter a choice (R)ock, (P)aper, (S)cissors: \n")
+  user_choice = input("Enter a choice (R)ock, (P)aper, (S)cissors: \n")
+  user_input = user_choice.upper()
   possible_choices = ["R", "P", "S"]
   possible_outcome = random.choice(possible_choices)
 
